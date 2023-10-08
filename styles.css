@@ -1,0 +1,167 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%) ;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 20px 20px 25px 20px;
+    row-gap: 25px;
+    border-radius: 12px;
+    box-shadow: 0 30px 8px 12px #0C1729, 0 20px 55px 50px #0C192C;
+}
+
+.image-section {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.image-section:hover .image-hover {
+    opacity: 0.5;
+}
+.image-section:hover .view-icon {
+    opacity: 1;
+}
+
+.equilibrium {
+    border-radius: 8px;
+}
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.view-icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 20px;
+}
+
+.title {
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%) ;
+}
+
+.sub-title {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.ethereum {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+}
+
+.eth-price {
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 400;
+}
+
+.time-left {
+    color: hsl(215, 51%, 70%);
+}
+
+.creator-name {
+    font-weight: 400;
+}
+
+.bottom-section {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.avatar {
+    width: 28px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator-name {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+span {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%) ;
+}
